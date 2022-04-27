@@ -1,0 +1,261 @@
+@import url(../vendor/fonts/font-Inter.css);
+
+.page {
+    max-width: 1280px;
+    min-width: 320px;
+    background-color: #2A2C2F;
+    margin: 0 auto;
+
+}
+
+.header {
+    width: 92.5%;
+    margin: 28px auto 56px;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+}
+
+.header__logo {
+    background-image: url(../image/__logo.svg);
+    width: 176px;
+    height: 52px
+}
+
+.lang__links {
+
+    display: grid;
+    grid-template-columns: min-content min-content;
+    list-style: none;
+    gap: 18px;
+    justify-self: end;
+    padding: 0;
+}
+
+.lang__link {
+    color: #FFFFFF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none;
+}
+
+.lang__link_active {
+    text-decoration: underline;
+}
+
+/*/////////lead//////////*/
+.lead {
+    width: 92.5%;
+    margin: auto;
+}
+
+.lead__title {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    color: #FFFFFF;
+    max-width: 720px;
+    font-family: Inter;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 100px;
+
+}
+
+.lead__subtitle {
+    text-align: center;
+    margin: 0 auto;
+    color: #FFFFFF;
+    max-width: 640px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 64px;
+}
+
+.lead__image-box {
+    margin: 0 auto;
+}
+
+.lead__image {
+    width: 100%;
+}
+
+.lead__caption {
+    color: #FFFFFF;
+}
+
+
+/*////////intro///////*/
+.intro {
+    width: 53.9%;
+    margin: 92px auto 0;
+    text-align: start;
+}
+
+.intro__title {
+    max-width: 690px;
+    color: #FFFFFF;
+    margin: 0 auto 40px;
+    font-family: Inter;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 58px;
+}
+
+.intro__text {
+    max-width: 690px;
+    color: #FFFFFF;
+    margin: 0 auto 33px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.intro__list {
+    color: #FFFFFF;
+    list-style: none;
+    max-width: 690px;
+    margin: 0;
+    padding: 0;
+}
+
+.list_string {
+    color: #FFFFFF;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+/*/////////photo-grid//////*/
+.photo-grid {
+
+    margin: 92px auto 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(22%, 1fr));
+    gap: 16px;
+}
+
+.photo-grid__item {
+    width: 100%;
+}
+
+/*////////places/////////*/
+.places {
+    width: 76.87%;
+    margin: 0 auto;
+}
+
+.place {
+    width: 100%;
+    margin-top: 92px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, min-content);
+    grid-template-areas:
+        "place__title place__website"
+        "place__image place__paragraph-wrapper";
+    gap: 48px 40px;
+}
+
+.place__title {
+    grid-area: place__title;
+    color: #FFFFFF;
+    max-width: 460px;
+    font-family: Inter;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 76px;
+    margin: 0;
+}
+
+.place__image {
+    width: 100%;
+    grid-area: place__image;
+}
+
+.place__website {
+    max-width: 456px;
+    grid-area: place__website;
+    align-self: flex-end;
+}
+
+.place__url-heading {
+    color: #AAAAAA;
+    max-width: 456px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.place__link {
+    color: #FFFFFF;
+    max-width: 456px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.place__paragraph-wrapper {
+    grid-area: place__paragraph-wrapper;
+}
+
+.place__paragraph {
+    color: #FFFFFF;
+    max-width: 484px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    margin: 0;
+}
+
+/*/////////cover/////////*/
+.cover {
+    width: 92.5%;
+    margin: 92px auto ;
+}
+
+.cover__title {
+    color: #FFFFFF;
+    max-width: 560px;
+    font-family: Inter;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 76px;
+    margin: 0;
+}
+
+.cover__subtitle {
+    color: #FFFFFF;
+    max-width: 360px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+}
+
+.cover__overlay {}
+
+.cover__background {
+    background-image: url(../image/cover/__background.jpg);
+    width: 100%;
+    min-height: 740px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-self: center;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
