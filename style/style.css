@@ -26,7 +26,6 @@
     font-weight: 900;
     font-size: 96px;
     line-height: 100px;
-
 }
 
 .lead__subtitle {
@@ -74,7 +73,7 @@
 .intro__text {
     max-width: 690px;
     color: #FFFFFF;
-    margin: 0 0 33px;
+    margin: 0 0 34px;
     font-family: Inter;
     font-weight: 400;
     font-size: 16px;
@@ -99,7 +98,6 @@
 
 /*/////////photo-grid//////*/
 .photo-grid {
-
     margin: 92px auto 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(22%, 1fr));
@@ -156,7 +154,8 @@
     font-family: Inter;
     font-weight: 400;
     font-size: 12px;
-    line-height: 12px;
+    line-height: 20px;
+    margin: 0;
 }
 
 .place__link {
@@ -206,7 +205,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    margin: 0;
+    margin: 32px 0 0;
     position: relative;
 }
 
@@ -258,11 +257,12 @@
 }
 
 .footer-box__table-links {
-    display: flex;
-    flex-direction: row;
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: grid;
+    grid-template-columns: repeat(5, min-content);
+    gap: 1.3vw;
 }
 
 .table-links__link {
@@ -272,196 +272,433 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
-    margin: 0 18px 0;
-
+    padding: 0;
+    margin: 0;
 }
 
 .footer-box__copyright {
     color: #FFFFFF;
-    
     font-family: 'Inter';
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     margin: 0;
+    margin-left: 15px;
 
 }
 
 @media screen and (max-width:1024px) {
-    .page {
-        max-width: 1024px;
-        min-width: 320px;
-        background-color: #2A2C2F;
-        margin: 0 auto;
-    }
 
+    /*header*/
     .header {
         width: 90.6%;
-        margin: 28px auto 56px;
-        display: grid;
-        grid-template-columns: max-content 1fr;
     }
 
+    /*lead*/
     .lead {
         width: 90.6%;
-        margin: auto;
     }
-    /*/////////photo-grid//////*/
 
+    /*photo-grid*/
     .photo-grid {
-
-        margin: 92px auto 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(29.3%, 1fr));
-        gap: 16px;
+        grid-template-columns: repeat(3, 30%);
+        justify-content: center;
     }
-    /*////////places/////////*/
 
+    /*places*/
     .places {
         width: 90.6%;
-        margin: 0 auto;
     }
 
     .place {
-        width: 100%;
-        margin-top: 92px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, min-content);
-        grid-template-areas:
-            "place__title place__website"
-            "place__image place__paragraph-wrapper";
         gap: 32px 48px;
     }
 
-    /*/////////cover/////////*/
-.cover {
-    width: 100%;
-    margin: 92px auto;
-}
+    /*cover*/
+    .cover {
+        width: 100%;
+    }
 
-/*///////footer///////*/
+    .cover__background {
+        min-height: 640px;
+    }
 
-.footer {
-    width: 90.6%;
-    margin: 0 auto;
-}
+    /*footer*/
+    .footer {
+        width: 90.6%;
+    }
 
 }
 
 @media screen and (max-width:768px) {
-    .page {
-        max-width: 768px;
-        min-width: 320px;
-        background-color: #2A2C2F;
-        margin: 0 auto;
-    }
+    /*header*/
 
     .header {
         width: 93.7%;
-        margin: 28px auto 56px;
-        display: grid;
-        grid-template-columns: max-content 1fr;
     }
 
+    /*lead*/
     .lead {
         width: 100%;
     }
 
-    /*////////intro///////*/
-.intro {
-    width: 93.7%;
-    margin: 88px auto 0;
-    text-align: left;
-}
-
-    /*/////////photo-grid//////*/
-
-    .photo-grid {
-
-        margin: 92px auto 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(45.8%, 1fr));
-        gap: 16px;
+    /*intro*/
+    .intro {
+        width: 93.7%;
+        margin: 88px auto 0;
     }
-    /*////////places/////////*/
 
+    .intro__title {
+        max-width: 720px;
+    }
+
+    .intro__text {
+        max-width: 720px;
+    }
+
+    .intro__list {
+        max-width: 720px;
+    }
+
+    /*photo-grid*/
+    .photo-grid {
+        grid-template-columns: repeat(2, 45.8%);
+        justify-content: center;
+    }
+
+    /*places*/
     .places {
         width: 90.6%;
-        margin: 0 auto;
     }
 
     .place {
-        width: 100%;
-        margin-top: 92px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, min-content);
-        grid-template-areas:
-            "place__title place__website"
-            "place__image place__paragraph-wrapper";
-        gap: 32px 48px;
+        gap: 28px 48px;
     }
 
-    /*/////////cover/////////*/
-.cover {
-    width: 100%;
-    margin: 92px auto;
+    .place__title {
+        max-width: 340px;
+        font-size: 42px;
+        line-height: 46px;
+    }
+
+    .place__website {
+        max-width: 352px;
+    }
+
+    .place__url-heading {
+        max-width: 100%;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .place__link {
+        max-width: 107px;
+    }
+
+    .place__paragraph {
+        max-width: 352px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+
+    /*cover*/
+    .cover {
+        width: 100%;
+    }
+
+    .cover__subtitle {
+        margin: 47px 0 0;
+    }
+
+    .cover__background {
+        min-height: 480px;
+    }
+
+    /*footer*/
+
+    .footer {
+        width: 93.7%;
+    }
+
 }
 
-/*///////footer///////*/
+@media screen and (max-width:720px) {
 
-.footer {
-    width: 90.6%;
-    margin: 0 auto;
+    /*lead*/
+    .lead__title {
+        font-size: 88px;
+        line-height: 90px;
+    }
+
+    /*////////places/////////*/
+    .places {
+        width: 100%;
+    }
+
+    .place {
+        margin-top: 50px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, min-content);
+        grid-template-areas:
+            "place__title"
+            "place__website"
+            "place__image"
+            "place__paragraph-wrapper";
+        gap: 30px;
+        text-align: justify
+    }
+
+    .place__title {
+        grid-area: place__title;
+        margin: auto;
+    }
+
+    .place__image {
+        grid-area: place__image;
+    }
+
+    .place__website {
+        grid-area: place__website;
+        text-align: center;
+        margin: auto;
+    }
+
+    .place__paragraph-wrapper {
+        grid-area: place__paragraph-wrapper;
+        text-align: center;
+        margin: auto;
+    }
+
+    .place__paragraph {
+        max-width: max-content;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    /*footer*/
+    .footer-box__table-links {
+        grid-template-columns: repeat(2, min-content);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2.3vw;
+    }
 }
 
+@media screen and (max-width:600px) {
+
+    .lead__title {
+        font-size: 73px;
+        line-height: 76px;
+    }
 }
 
+@media screen and (max-width:500px) {
+
+    .lead__title {
+        font-size: 58px;
+        line-height: 54px;
+    }
+
+    .photo-grid {
+        grid-template-columns: repeat(1, 95%);
+        justify-content: center;
+    }
+
+    .cover__title {
+        font-size: 52px;
+        line-height: 61px;
+    }
+}
+
+@media screen and (max-width:368px) {
+
+    .lead__title {
+        font-size: 44px;
+        line-height: 48px;
+    }
+
+    .lead__subtitle {
+        font-size: 23px;
+        line-height: 33px;
+        margin-bottom: 64px;
+        margin: 20px 0 0;
+    }
+
+    .cover {
+        margin: 50px auto;
+    }
+
+    .cover__background {
+        min-height: 360px;
+    }
+
+    .cover__title {
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    .cover__subtitle {
+        margin: 20px 0 0;
+    }
 
 
+}
 
+@media screen and (max-width:320px) {
 
+    .header {
+        width: 90%;
+    }
 
+    .header__lang-link {
+        font-size: 18px;
+        line-height: 20px;
+    }
 
+    .header__logo {
+        width: 142px;
+        height: 42px;
+        background-position: center;
+        background-size: contain;
+    }
 
+    /*lead*/
+    .lead {
+        width: 100%;
+    }
 
+    .lead__title {
+        margin-bottom: 16px;
+        max-width: 288px;
+        font-size: 40px;
+        line-height: 44px;
+    }
 
+    .lead__subtitle {
+        max-width: 288px;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 40px;
+    }
 
+    /*intro*/
+    intro {
+        width: 90.9%;
+        margin: 64px auto 0;
+    }
 
+    .intro__title {
+        max-width: 288px;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 35px;
+    }
 
+    .intro__text {
+        max-width: 288px;
+        font-size: 16px;
+        line-height: 26px;
+    }
 
+    .intro__list {
+        max-width: 288px;
+    }
 
+    /*photo-grid*/
+    .photo-grid {
+        margin: 64px 0 0;
+        display: grid;
+        grid-template-columns: 90.9%;
+        gap: 16px;
+        justify-content: center;
+    }
 
+    /*place*/
+    .place {
+        margin-top: 64px;
+        gap: 32px;
+    }
 
+    .place__title {
+        max-width: 288px;
+        font-size: 32px;
+        line-height: 35px;
+    }
 
+    .place__website {
+        max-width: 288px;
+    }
 
+    .place__url-heading {
+        max-width: 100%;
+        font-size: 12px;
+        line-height: 12px;
+    }
 
+    .place__link {
+        width: 100%;
+    }
 
+    .place__paragraph-wrapper {
+        max-width: 288px;
+    }
 
+    .place__paragraph {
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 26px;
+        margin: 0;
+    }
 
+    /*cover*/
+    .cover {
+        width: 100%;
+        margin: 66px 0;
+    }
 
+    .cover__title {
+        max-width: 288px;
+        font-size: 32px;
+        line-height: 35px;
+    }
 
+    .cover__subtitle {
+        max-width: 288px;
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 16px;
+    }
 
+    .cover__background {
+        min-height: 200px;
+    }
 
+    /*footer*/
+    .footer {
+        width: 58.8%;
+        margin-left: 16px;
+    }
 
+    .footer-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
+    .footer-box__table-links {
+        grid-template-columns: repeat(1, min-content);
+        gap: 32px;
+    }
 
+    .table-links__link {
+        font-size: 24px;
+        line-height: 24px;
+    }
 
+    .footer-box__copyright {
+        font-size: 14px;
+        line-height: 14px;
+        margin: 0;
+        margin: 48px 0 0;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
