@@ -1,0 +1,17 @@
+.table-links__link {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width:320px) {
+    .table-links__link {
+        font-size: 24px;
+        line-height: 24px;
+    }
+}

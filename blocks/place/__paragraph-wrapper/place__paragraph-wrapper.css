@@ -1,0 +1,17 @@
+.place__paragraph-wrapper {
+    grid-area: place__paragraph-wrapper;
+}
+
+@media screen and (max-width:720px) {
+    .place__paragraph-wrapper {
+        grid-area: place__paragraph-wrapper;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .place__paragraph-wrapper {
+        max-width: 288px;
+    }
+}
