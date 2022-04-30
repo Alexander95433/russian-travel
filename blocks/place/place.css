@@ -33,7 +33,7 @@
             "place__image"
             "place__paragraph-wrapper";
         gap: 30px;
-        text-align: justify
+        text-align: justify;
     }
 }
 
