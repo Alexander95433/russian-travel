@@ -2,9 +2,3 @@
     width: 100%;
     grid-area: place__image;
 }
-
-@media screen and (max-width:720px) {
-    .place__image {
-        grid-area: place__image;
-    }
-}

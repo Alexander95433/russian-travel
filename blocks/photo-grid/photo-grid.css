@@ -15,7 +15,6 @@
 @media screen and (max-width:768px) {
     .photo-grid {
         grid-template-columns: repeat(2, 45.8%);
-        justify-content: center;
     }
 }
 
@@ -24,7 +23,5 @@
         margin: 64px 0 0;
         display: grid;
         grid-template-columns: 90.9%;
-        gap: 16px;
-        justify-content: center;
     }
 }
