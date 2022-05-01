@@ -5,14 +5,14 @@
     color: #FFFFFF;
     max-width: 720px;
     font-weight: 900;
-    font-size: 96px;
+    font-size: 95px;
     line-height: 100px;
 }
 
 @media screen and (max-width:720px) {
 
     .lead__title {
-        font-size: 80px;
+        font-size: 79px;
         line-height: 90px;
     }
 }
@@ -20,14 +20,14 @@
 @media screen and (max-width:600px) {
 
     .lead__title {
-        font-size: 66px;
+        font-size: 65px;
         line-height: 76px;
     }
 }
 
 @media screen and (max-width:500px) {
     .lead__title {
-        font-size: 48px;
+        font-size: 47px;
         line-height: 54px;
     }
 }
