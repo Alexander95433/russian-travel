@@ -1,0 +1,13 @@
+@media screen and (max-width:720px) {
+    .footer-box__table-link-weather{
+        grid-row: span 2;
+        align-self: end;
+    }
+}
+
+@media screen and (max-width:416px) {
+    .footer-box__table-link-weather{
+        grid-row: span 1;
+        align-self:end;
+    }
+}

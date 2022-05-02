@@ -58,4 +58,6 @@
 @import url(../blocks/footer-box/footer-box.css);
 @import url(../blocks/footer-box/__table-links/footer-box__table-links.css);
 @import url(../blocks/footer-box/__link/footer-box__link.css);
+@import url(../blocks/footer-box/__table-link-weather/footer-box__table-link-weather.css);
 @import url(../blocks/footer/__copyright/footer-box__copyright.css);
+

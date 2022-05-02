@@ -12,10 +12,12 @@
         grid-template-columns: repeat(2, min-content);
         grid-template-rows: repeat(3, 1fr);
         gap: 2.3vw;
+      
     }
+
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:416px) {
     .footer-box__table-links {
         grid-template-columns: repeat(1, min-content);
         gap: 32px;
